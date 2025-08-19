@@ -1,0 +1,46 @@
+{
+  "info": {
+    "name": "Video Backend",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Signup",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{ \"username\":\"test\", \"email\":\"test@mail.com\", \"password\":\"1234\" }"
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/auth/signup"
+        }
+      }
+    },
+    {
+      "name": "Login",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{ \"email\":\"test@mail.com\", \"password\":\"1234\" }"
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/auth/login"
+        }
+      }
+    },
+    {
+      "name": "List videos",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5000/api/videos"
+        }
+      }
+    }
+  ]
+}
